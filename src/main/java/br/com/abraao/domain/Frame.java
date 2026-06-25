@@ -8,8 +8,8 @@ import lombok.Setter;
 public class Frame {
 
     private int id;
-    private Integer pageNumber;
     private boolean occupied;
+    private Integer pageNumber;
 
     public Frame(int id) {
         this.id = id;

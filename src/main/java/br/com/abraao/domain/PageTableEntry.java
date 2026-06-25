@@ -8,8 +8,8 @@ import lombok.Setter;
 public class PageTableEntry {
 
     private int pageNumber;
-    private Integer frameNumber;
     private boolean present;
+    private Integer frameNumber;
 
     public PageTableEntry(int pageNumber) {
         this.pageNumber = pageNumber;
