@@ -5,15 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71a0dea0-a14f-4c46-acb4-79bd58421555" name="Changes" comment="Implementando estrutura da memória virtual">
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/abraao/util/ConsolePrinter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/abraao/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/abraao/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/abraao/domain/MainMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/abraao/domain/MainMemory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/abraao/domain/SimulatedProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/abraao/service/SimulatedProcessService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/abraao/service/FIFOReplacementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/abraao/service/FIFOReplacementService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/abraao/service/MMUService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/abraao/service/MMUService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/abraao/service/interfaces/PageReplacementDelegate.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/abraao/util/StatisticsUtil.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
