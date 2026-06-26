@@ -44,7 +44,7 @@ public class MMUService {
                 .build();
     }
 
-    private void loadPage(int page, PageTableEntry entry) {
+    private synchronized void loadPage(int page, PageTableEntry entry) {
         Frame frame = mainMemory.findFreeFrame();
 
         if (isNull(frame)) {

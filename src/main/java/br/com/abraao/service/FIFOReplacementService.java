@@ -14,7 +14,7 @@ public class FIFOReplacementService {
 
     private final Queue<Integer> queue = new LinkedList<>();
 
-    public void pageLoaded(int page) {
+    public synchronized void pageLoaded(int page) {
         queue.offer(page);
     }
 
