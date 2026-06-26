@@ -23,15 +23,4 @@ public class MainMemory {
         }
         return null;
     }
-
-    public void printMemory() {
-        System.out.println("============[MAIN MEMORY]============");
-        for (Frame frame : frames) {
-            if (frame.isOccupied())
-                System.out.printf("Frame %d -> Página %d%n", frame.getId(), frame.getPageNumber());
-            else
-                System.out.printf("Frame %d -> Livre%n", frame.getId());
-        }
-        System.out.println("============[MAIN MEMORY]============");
-    }
 }

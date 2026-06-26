@@ -5,18 +5,19 @@ import br.com.abraao.domain.MainMemory;
 import br.com.abraao.domain.PageTable;
 import br.com.abraao.domain.PageTableEntry;
 import br.com.abraao.domain.TranslationResult;
-import br.com.abraao.service.interfaces.PageReplacementDelegate;
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 
 import static br.com.abraao.domain.enums.ConstantsEnum.PAGE_SIZE;
 import static java.util.Objects.isNull;
 
+@Getter
 @AllArgsConstructor
 public class MMUService {
 
     private final PageTable pageTable;
     private final MainMemory mainMemory;
-    private final PageReplacementDelegate PageReplacementAlgorithm;
+    private final FIFOReplacementService PageReplacementAlgorithm;
 
     public synchronized TranslationResult translate(int virtualAddress) {
         int page = virtualAddress / PAGE_SIZE.getValue();
@@ -53,10 +54,8 @@ public class MMUService {
 
         frame.setOccupied(true);
         frame.setPageNumber(page);
-
         entry.setPresent(true);
         entry.setFrameNumber(frame.getId());
-
         PageReplacementAlgorithm.pageLoaded(page);
     }
 }

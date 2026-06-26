@@ -4,22 +4,21 @@ import br.com.abraao.domain.Frame;
 import br.com.abraao.domain.MainMemory;
 import br.com.abraao.domain.PageTable;
 import br.com.abraao.domain.PageTableEntry;
-import br.com.abraao.service.interfaces.PageReplacementDelegate;
+import lombok.Getter;
 
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class FIFOReplacementService implements PageReplacementDelegate {
+@Getter
+public class FIFOReplacementService {
 
-    private Queue<Integer> queue = new LinkedList<>();
+    private final Queue<Integer> queue = new LinkedList<>();
 
-    @Override
     public void pageLoaded(int page) {
         queue.offer(page);
     }
 
-    @Override
-    public Frame replace(int newPage, MainMemory memory, PageTable pageTable) {
+    public synchronized void replace(int newPage, MainMemory memory, PageTable pageTable) {
         Integer victimPage = queue.poll();
 
         PageTableEntry victimEntry = pageTable.getEntry(victimPage);
@@ -37,7 +36,5 @@ public class FIFOReplacementService implements PageReplacementDelegate {
         newEntry.setFrameNumber(frame.getId());
 
         queue.offer(newPage);
-
-        return frame;
     }
 }

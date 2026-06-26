@@ -1,13 +1,14 @@
-package br.com.abraao.domain;
+package br.com.abraao.service;
 
-import br.com.abraao.service.MMUService;
+import br.com.abraao.domain.TranslationResult;
 import lombok.AllArgsConstructor;
 import java.util.concurrent.ThreadLocalRandom;
 
 import static br.com.abraao.domain.enums.ConstantsEnum.VIRTUAL_MEMORY_SIZE;
+import static br.com.abraao.util.ConsolePrinter.printAccess;
 
 @AllArgsConstructor
-public class SimulatedProcess implements Runnable {
+public class SimulatedProcessService implements Runnable {
 
     private final int pid;
     private final int accesses;
@@ -17,27 +18,14 @@ public class SimulatedProcess implements Runnable {
     public void run() {
         for (int i = 0; i < accesses; i++) {
             int virtualAddress = generateAddress();
-
             TranslationResult result = mmu.translate(virtualAddress);
-            print(result);
+            printAccess(this.pid, result, mmu.getMainMemory(), mmu.getPageReplacementAlgorithm().getQueue());
             sleep();
         }
     }
 
     private int generateAddress() {
         return ThreadLocalRandom.current().nextInt(VIRTUAL_MEMORY_SIZE.getValue());
-    }
-
-    private void print(TranslationResult result) {
-        System.out.printf(
-                "[P%d] VA=%d | Página=%d | Frame=%d | PA=%d | Fault=%s%n",
-                pid,
-                result.getVirtualAddress(),
-                result.getPageNumber(),
-                result.getFrameNumber(),
-                result.getPhysicalAddress(),
-                result.isPageFault()
-        );
     }
 
     private void sleep() {

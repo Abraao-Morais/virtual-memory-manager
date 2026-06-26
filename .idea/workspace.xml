@@ -5,21 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="71a0dea0-a14f-4c46-acb4-79bd58421555" name="Changes" comment="Implementando estrutura da memória virtual">
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/abraao/domain/SimulatedProcess.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/abraao/domain/TranslationResult.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/abraao/domain/enums/ConstantsEnum.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/abraao/service/FIFOReplacementService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/abraao/service/MMUService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/abraao/service/interfaces/PageReplacementDelegate.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/abraao/util/StatisticsUtil.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/br/com/abraao/util/ConsolePrinter.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/abraao/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/abraao/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/abraao/domain/Constants.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/abraao/domain/Frame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/abraao/domain/Frame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/br/com/abraao/domain/MainMemory.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/abraao/domain/MainMemory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/abraao/domain/PageTable.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/abraao/domain/PageTable.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/abraao/domain/PageTableEntry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/abraao/domain/PageTableEntry.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/abraao/domain/SimulatedProcess.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/abraao/service/SimulatedProcessService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/abraao/service/FIFOReplacementService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/abraao/service/FIFOReplacementService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/abraao/service/MMUService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/br/com/abraao/service/MMUService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/abraao/service/interfaces/PageReplacementDelegate.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/br/com/abraao/util/StatisticsUtil.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,35 +30,35 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GitHubPullRequestSearchHistory"><![CDATA[{
-  "lastFilter": {
-    "state": "OPEN",
-    "assignee": "Abraao-Morais"
+  <component name="GitHubPullRequestSearchHistory">{
+  &quot;lastFilter&quot;: {
+    &quot;state&quot;: &quot;OPEN&quot;,
+    &quot;assignee&quot;: &quot;Abraao-Morais&quot;
   }
-}]]></component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/Abraao-Morais/virtual-memory-manager.git",
-    "accountId": "caf9c88e-73c3-4726-afce-2cd5763d5d35"
+}</component>
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/Abraao-Morais/virtual-memory-manager.git&quot;,
+    &quot;accountId&quot;: &quot;caf9c88e-73c3-4726-afce-2cd5763d5d35&quot;
   }
-}]]></component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 2
-}]]></component>
+}</component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 2
+}</component>
   <component name="ProjectId" id="3FbgQ2cJqUvJguayZ9LVt7P15RX" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Application.Main.executor": "Run",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "master"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
